@@ -1,12 +1,20 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
+import Menu from "./pages/Menu";
+import Login from "./pages/Login";
 
 function App() {
   return (
-    <div className="grid grid-cols-1 gap-5">
-      <div className="flex flex-col min-h-screen p-5 bg-gray-100 w-full lg:w-1/3 md:w-1/2 justify-self-center">
-        <div className="mb-auto space-y-5"></div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/menu" element={<Menu />} />
+
+        {/* Guest Route */}
+        <Route path="/login" element={<Login />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
