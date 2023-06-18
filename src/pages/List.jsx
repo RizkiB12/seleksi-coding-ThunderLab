@@ -5,7 +5,7 @@ import { FaUser } from "react-icons/fa";
 import { IoMdListBox } from "react-icons/io";
 import { MdDashboard } from "react-icons/md";
 
-export default function Login() {
+export default function List() {
   const navigate = useNavigate();
   return (
     <div className="grid grid-cols-1 gap-5">
@@ -13,7 +13,7 @@ export default function Login() {
         <div className="mb-auto space-y-5">
           <div className="flex flex-col items-center justify-center h-screen">
             <div className="text-3xl font-extrabold mb-5">404</div>
-            <div className="text-sm font-medium mb-2">Page LOGIN not Found</div>
+            <div className="text-sm font-medium mb-2">Page LIST not Found</div>
             <div className="px-5 py-2 text-sm font-semibold text-white bg-green-500 cursor-pointer" onClick={() => navigate("/")}>
               Go Home
             </div>
