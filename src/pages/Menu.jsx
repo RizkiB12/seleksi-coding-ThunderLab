@@ -59,7 +59,7 @@ export default function Menu() {
           </div>
           {/* Content start */}
           <div className="justify-self-center h-screen p-3">
-            <div className="rounded mx-auto max-w-[800px] min-h-[600px] shadow-2xl bg-white">
+            <div className="rounded mx-auto max-w-[800px] min-h-[800px] shadow-2xl bg-white">
               <Input handler={addToDoHandler} />
               <Box data={todos} removeHandler={removeToDo} />
             </div>
