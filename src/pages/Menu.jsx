@@ -25,7 +25,6 @@ export default function Menu() {
   };
 
   const addToDoHandler = (item) => {
-    // console.log(item);
     setToDo([
       ...todos,
       {
@@ -41,7 +40,7 @@ export default function Menu() {
         <div className="mb-auto space-y-5">
           {/* Navbar */}
           <div className="flex justify-between items-center sticky top-0 bg-white -m-5 px-5 py-3 mb-5 drop-shadow-md">
-            <NavLink to="/" className="font-semibold">
+            <NavLink to="/menu" className="font-semibold">
               ToDoList
             </NavLink>
             <div className="flex items-center space-x-3">
