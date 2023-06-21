@@ -30,7 +30,7 @@ export default function Login() {
             <label htmlFor="password">Password</label>
             <input className="w-full p-2 rounded-xl" type="password" name="password" placeholder="Password" />
             <div className="flex">
-              <button type="submit" className="bg-green-500 text-white mt-3 py-2 px-3 rounded-lg transition ease-in-out hover:bg-green-600" onClick={showAlert}>
+              <button type="submit" className="bg-green-400 text-white mt-3 py-2 px-3 rounded-lg transition ease-in-out hover:bg-green-600" onClick={showAlert}>
                 Login
               </button>
             </div>
